@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .chat-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .message {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .message-content {
+            padding: 10px;
+            border-radius: 10px;
+            flex-grow: 1;
+        }
+
+        .message-content p {
+            margin: 5px 0;
+        }
+
+        .message-content p.time {
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        .user1-message {
+            background-color: rgb(171 106 204);
+            color: #ffffff;
+        }
+
+        .user1-message p {
+            color: #ffffff;
+        }
+
+        .user2-message {
+            background-color: #f0f0f0;
+        }
+
+        .summary-heading {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .summary-heading h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .logo-image {
+            margin-bottom: 3rem;
+        }
+
+        .chat-service {
+            position: absolute;
+            border-block-end: 2px solid #000000;
+            top: 10.6rem;
+        }
+
+        /*rgb(171 106 204)*/
+    </style>
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="summary-heading">
+            <img class="logo-image" src="data:image/png;base64,{{base64Image}}" alt="Rainbow Health Finder">
+        </div>
+        {{#ifEquals serviceName 'Both'}}
+        {{#each chatData}}
+        <h1 style="margin-bottom: 2rem; text-align:center;">{{chatHeadingBoth}}</h1>
+        <h1>{{summaryDate}}</h1>
+        {{#each data}}
+        <div class="message">
+            <div class="message-content {{#ifEquals userName 'You'}}user1-message{{else}}user2-message{{/ifEquals}}">
+                <p>
+                    <strong class="{{#ifEquals userName 'You'}}user1-message-strong{{else}}bot{{/ifEquals}}">
+                        {{userName}}
+                    </strong> - <span class="time">{{time}}</span>
+                </p>
+                {{#each text}}
+                <div>{{text}}</div>
+                {{/each}}
+            </div>
+        </div>
+        {{/each}}
+        {{/each}}
+        {{else}}
+        <h1 style="margin-bottom: 2rem; text-align:center;">{{chatHeading}}</h1>
+        {{#each chatData}}
+        <div class="message">
+            <div class="message-content {{#ifEquals userName 'You'}}user1-message{{else}}user2-message{{/ifEquals}}">
+                <p>
+                    <strong class="{{#ifEquals userName 'You'}}user1-message-strong{{else}}bot{{/ifEquals}}">
+                        {{userName}}
+                    </strong> - <span class="time">{{time}}</span>
+                </p>
+                {{#each text}}
+                <div>{{text}}</div>
+                {{/each}}
+            </div>
+        </div>
+        {{/each}}
+        {{/ifEquals}}
+    </div>
+</body>
+
+</html>

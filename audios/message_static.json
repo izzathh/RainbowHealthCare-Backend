@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "soundFile": "E:\\OfficeProjects\\chat-bot\\backend-2\\audios\\message_static.wav",
+    "duration": 2.76
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.12, "value": "X" },
+    { "start": 0.12, "end": 0.16, "value": "B" },
+    { "start": 0.16, "end": 0.20, "value": "C" },
+    { "start": 0.20, "end": 0.34, "value": "B" },
+    { "start": 0.34, "end": 0.55, "value": "C" },
+    { "start": 0.55, "end": 0.62, "value": "B" },
+    { "start": 0.62, "end": 0.70, "value": "A" },
+    { "start": 0.70, "end": 0.86, "value": "D" },
+    { "start": 0.86, "end": 1.00, "value": "C" },
+    { "start": 1.00, "end": 1.07, "value": "B" },
+    { "start": 1.07, "end": 1.14, "value": "C" },
+    { "start": 1.14, "end": 1.28, "value": "B" },
+    { "start": 1.28, "end": 1.42, "value": "C" },
+    { "start": 1.42, "end": 1.91, "value": "B" },
+    { "start": 1.91, "end": 2.12, "value": "C" },
+    { "start": 2.12, "end": 2.20, "value": "A" },
+    { "start": 2.20, "end": 2.54, "value": "D" },
+    { "start": 2.54, "end": 2.68, "value": "B" },
+    { "start": 2.68, "end": 2.76, "value": "X" }
+  ]
+}

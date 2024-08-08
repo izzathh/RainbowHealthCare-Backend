@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "soundFile": "E:\\OfficeProjects\\health-care-bots\\backend-2\\audios\\initial-chat-2.wav",
+    "duration": 2.11
+  },
+  "mouthCues": [
+    {
+      "start": 0.00,
+      "end": 0.10,
+      "value": "X"
+    },
+    {
+      "start": 0.10,
+      "end": 0.18,
+      "value": "A"
+    },
+    {
+      "start": 0.18,
+      "end": 0.66,
+      "value": "F"
+    },
+    {
+      "start": 0.66,
+      "end": 0.73,
+      "value": "B"
+    },
+    {
+      "start": 0.73,
+      "end": 0.94,
+      "value": "C"
+    },
+    {
+      "start": 0.94,
+      "end": 1.01,
+      "value": "B"
+    },
+    {
+      "start": 1.01,
+      "end": 1.08,
+      "value": "E"
+    },
+    {
+      "start": 1.08,
+      "end": 1.15,
+      "value": "H"
+    },
+    {
+      "start": 1.15,
+      "end": 1.22,
+      "value": "C"
+    },
+    {
+      "start": 1.22,
+      "end": 1.36,
+      "value": "E"
+    },
+    {
+      "start": 1.36,
+      "end": 1.50,
+      "value": "G"
+    },
+    {
+      "start": 1.50,
+      "end": 1.57,
+      "value": "B"
+    },
+    {
+      "start": 1.57,
+      "end": 1.92,
+      "value": "E"
+    },
+    {
+      "start": 1.92,
+      "end": 1.99,
+      "value": "B"
+    },
+    {
+      "start": 1.99,
+      "end": 2.11,
+      "value": "X"
+    }
+  ]
+}

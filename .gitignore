@@ -1,0 +1,9 @@
+# Logs
+logs
+
+.env
+.htaccess
+node_modules
+serviceaccount-client.json
+serviceaccount-office.json
+index-live-backup.js
